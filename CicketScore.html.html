@@ -1,0 +1,183 @@
+
+<html>
+    <title></title>
+    <head><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=uZWqFAOdLTM1pLWvADXUnctBWCzQO5TJYB_8157LQHzCkmI24crDfbVT68X57dVs95gye669vxsarI-7Ew0gI-jJw1yjRsZfldrfsaK08Utc06WVTrG1hWEVj1_vWK1BweVp2GJhAC7mjhEhny2PSoCliAH99h2RrszJfu7C5RtFhxmME1rX68naLMyXWT0qY8ybLOfrLS423-7YM4xqmF856mavHsOk1FnQebm0v1tuAJRuXZwVG2AVILgP8EGPePB9uFulx1AGDz86VAq-JkBA1yLBCD2tcFUAyBLLOdZtoYnJjBJ4daU3mpHWyDEgU7ejVHYWrH7wyOVOu2OocoUyLW0FOpVQosSxjw6ubRhXH1FK_t8k7RPkehY2eiPi-Pzjk1ZaMzpe_R_Y8j3MsZYrsjDCaAoSzVClN5D-ui19KN6Y6w1dFZOvpTqJGgY4tovzLCPWRewyriGnxT6_nQZCmwvk_bgaCzXhskXm2ubbyPqs6oiSCOeQF53prf7daUdHgWq16YjixAddjbpDaxzMXl7WcnwdYYgTHnH6vmFZU1nc0hyPNpcqSJmQnlCydW3xVyV-uD3w7WRZa7iYsL-nRSs12WhdO5KL-gxYkKOIqlDMpYVX28PO6K-V6w9JvkR7xIIiHS9FUbdXozD2X_UKClDUwW_55g3KGDhVUgc7q1GwME6b11rjgUVFLXFX95CoSeINIPVh6hxRnvSU3P5cFBmxJhK9gsun_3AbsqwKKjUvVJgMjYTKXoiwVVNZBxmNGSz8Jh_Exmfo6Cg85wgPNUdmuS--RlohpfzNQpEG-tDhf-uIq36l7Buv5CRNY-Kt4mXsXDct3YOLUvTPros_DaHNUuYFy9Q0DM1mRj2ClAJjWN8adScKbMcOk6B3Hx9qHwdWLvq-6DW6YBzUgLwC-38dcJY_eh8CCsTh6KjvadEH_5W_gepZLwvoZOcFKq7wyCcwNinW_fgfv2AwjzJkbUDgsK_XUAEZSAgEqG_uekbkIzPxv5Naa8-aEkStQJyTsFfIWpipc2RrHsIs-TABrmV3jaIM6YzyDz5dFOA2BhU9OLbtzC0KmfjfiATT-dLdlMm-RtZCv-8PqzhBbxiAuL-OuXAaVCf1092lu-YyKMyZK0hDcQYt813entDxFTgDvv9UB4RXzRxdeAQkL_FhaEV92c9V9eqPDkqtDTl_cYT6Y6ROzbQhfm665pKzs3VL5s3y2USB047fFHHrZg" nonce="64fe2106cacb80bb61a7950bb26bbe12" charset="UTF-8"></script></head>
+    <style>
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+/* .container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+} */
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+}
+    </style>
+    <body>
+            <div class="container">
+                  
+                    <div class="content">
+                      <form action="#">
+                        <div class="user-details">
+                          <div class="input-box">
+                            <span class="details">Enter Team Name 1</span>
+                            <input type="text" id="textone" onblur="validattionText()" required>
+                          </div>
+                          <div class="input-box">
+                            <span class="details">Score 1</span>
+                            <input type="text" id="scoreone" onblur="validattionScore1()" required>
+                          </div>
+                          <div class="input-box">
+                                <span class="details">Enter Team Name 2</span>
+                                <input type="text" id="textTwo" onblur="validattionText2()" required>
+                              </div>
+                              <div class="input-box">
+                                <span class="details">Score 2</span>
+                                <input type="text" id=scoretwo  onblur="validattionScore2()" required>
+                              </div>
+
+                              <div class="button">
+                                    <input type="submit" value="Result" onclick="result()">
+                                  </div>
+                                  <div>
+                                    <p id="demo"></p>
+
+                                  </div>
+    </body>
+</html>
+<script>
+  function validattionText(){
+  
+   var name=document.getElementById("textone").value;
+var letters = /^[A-Za-z]+$/;
+   if(name.match(letters))
+     {
+      document.getElementById("demo").innerHTML = " ";
+      return true;
+
+     }
+   else
+     {
+    // alert("message");
+     document.getElementById("demo").innerHTML = "Only Letters Allowed";
+
+     return false;
+     }
+    
+  }
+  function validattionText2(){
+      var name=document.getElementById("textTwo").value;
+      var letters = /^[A-Za-z]+$/;
+   if(name.match(letters))
+     {
+      document.getElementById("demo").innerHTML = " ";
+      var name1=document.getElementById("textone").value;
+      //alert(name1);
+      if(name1==name){
+        document.getElementById("demo").innerHTML = " both names shouldnot be same";
+      }
+      return true;
+
+     }
+   else
+     {
+    // alert("message");
+     document.getElementById("demo").innerHTML = "Only Letters Allowed";
+
+     return false;
+     }
+     }
+     function validattionScore1(){
+      var score=document.getElementById("scoreone").value;
+      var result=score.split('/');
+      var finalScore= result[0];
+      //alert(finalScore);
+      var wickets=result[1];
+      //alert(wickets);
+      var numbers = /^[0-9]+$/;
+      if(finalScore.length==3 && finalScore.match(numbers) ){
+        document.getElementById("demo").innerHTML = " ";
+      }else{
+        document.getElementById("demo").innerHTML = " Please follow formate ex:123/9 ";
+      }
+     }
+     function validattionScore2(){
+      var score5=document.getElementById("scoretwo").value;
+      var result=score5.split('/');
+      var finalScore= result[0];
+      //alert(finalScore);
+      var wickets=result[1];
+      //alert(wickets);
+      var numbers = /^[0-9]+$/;
+      if(finalScore.length==3 && finalScore.match(numbers) ){
+        document.getElementById("demo").innerHTML = " ";
+      }else{
+        document.getElementById("demo").innerHTML = " Please follow formate ex:123/9 ";
+      }
+     }
+     function result(){
+      var score1=document.getElementById("scoreone").value;
+      var score2=document.getElementById("scoretwo").value;
+      var result=score1.split('/');
+      var finalScore1= result[0];
+      //alert(finalScore1);
+      var wickets1=result[1];
+
+      var result2=score2.split('/');
+      var finalScore2= result2[0];
+     // alert(finalScore2);
+      var wickets2=result2[1];
+      var name1=document.getElementById("textone").value;
+      var name2=document.getElementById("textTwo").value;
+      if(score1>score2){
+        var result3=score1-score2;
+      document.getElementById("demo").innerHTML = name1 +" won by "+result3 +" runs ";
+      }else{
+        var result4=wickets1 - wickets2;
+        document.getElementById("demo").innerHTML = name2 + " won by"+result4 +" wicktets ";
+      }
+     // document.getElementById("demo").innerHTML = " Hyderabad win 5 wicktets ";
+     }
+  </script>
+  
